@@ -3,7 +3,7 @@ node_js:
   - "node"
 before_script:
   - npm install -g tiddlywiki
-  _ apt-get install openssh-server
+  _ sudo apt-get install openssh-server
 script: 
   - tiddlywiki ./*wiki --listen &
   - ssh -R 80:127.0.0.1:8080 ssh.localhost.run
