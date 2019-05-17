@@ -5,12 +5,12 @@
 #git init
 
 # inside this git repo we'll pretend to be a new user
-git config user.name "Travis CI"
-git config user.email "${GH_EMAIL}"
+#git config user.name "Travis CI"
+#git config user.email "${GH_EMAIL}"
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
-git pull "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+git pull "https://${GH_TOKEN}@${GH_REF}" master
 git add .
 git commit -m "Deploy to GitHub Pages $(date)"
 
@@ -19,4 +19,4 @@ git commit -m "Deploy to GitHub Pages $(date)"
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 
-git push --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+git push --quiet "https://${GH_TOKEN}@${GH_REF}" master
