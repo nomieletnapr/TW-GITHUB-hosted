@@ -14,7 +14,7 @@
 # files present with the commit message "Deploy to GitHub Pages".
 
 git add .
-git commit
+git commit -m "Deploy to GitHub Pages $(date)"
 
 # Force push from the current repo's master branch to the remote
 # repo's gh-pages branch. (All previous history on the gh-pages branch
