@@ -6,7 +6,7 @@ before_script:
 script: 
   - tiddlywiki ./*wiki --listen &
   - sleep 10
-  - ssh StrictHostKeyChecking=accept-new -R 80:127.0.0.1:8080 ssh.localhost.run
+  - ssh -o "StrictHostKeyChecking=accept-new" -R 80:127.0.0.1:8080 ssh.localhost.run
 after_success:
   - bash ./publish.sh
 
