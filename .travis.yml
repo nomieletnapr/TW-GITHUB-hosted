@@ -5,9 +5,8 @@ before_script:
   - npm install -g tiddlywiki
 script: 
   - tiddlywiki ./*wiki --listen &
-  - sleep 10
-  - ssh -o "StrictHostKeyChecking=no" -R 80:127.0.0.1:8080 ssh.localhost.run &
-  - watch -n 60 ./push_back.sh
+  - watch -n 60 ./push_back.sh &
+  _ ssh -o "StrictHostKeyChecking=no" -R 80:127.0.0.1:8080 ssh.localhost.run
 after_success:
 
 branches:
