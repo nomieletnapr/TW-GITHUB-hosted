@@ -3,12 +3,12 @@
 # go to the output directory and create a new git repo
 # cd ./*wiki/output || exit 1 # abort script if folder does not exists
 
-git init
+# git init
 
 # inside this git repo we'll pretend to be a new user
 
-git config user.name "Travis CI"
-git config user.email "${GH_EMAIL}"
+# git config user.name "Travis CI"
+# git config user.email "${GH_EMAIL}"
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
