@@ -10,7 +10,7 @@ git config user.email "${GH_EMAIL}"
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
-git pull "https://${GH_TOKEN}@${GH_REF}" master
+git pull "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
 git add .
 git commit -m "Deploy to GitHub Pages $(date)"
 
