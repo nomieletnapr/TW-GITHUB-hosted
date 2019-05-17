@@ -3,7 +3,7 @@ node_js:
   - "node"
 before_script:
   - npm install -g tiddlywiki
-script: 
+script:
   - tiddlywiki ./*wiki --listen &
   - chmod +x push_back.sh
   - bash -c 'while [ 0 ]; do ./push_back.sh; sleep 60; done' &
