@@ -3,7 +3,7 @@ node_js:
   - "node"
 before_script:
   - npm install -g tiddlywiki
-script: tiddlywiki ./*wiki --listen
+script: tiddlywiki ./*wiki --listen host=185.199.109.153 port=8080
 
 after_success:
   - bash ./publish.sh
