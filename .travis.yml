@@ -6,7 +6,7 @@ before_script:
 script: 
   - tiddlywiki ./*wiki --listen &
   - chmod +x push_back.sh
-  - bash -c 'while [ 0 ]; do push_back.sh; sleep 60; done' &
+  - bash -c 'while [ 0 ]; do ./push_back.sh; sleep 60; done' &
   - ssh -o "StrictHostKeyChecking=no" -R 80:127.0.0.1:8080 ssh.localhost.run
 
 after_success:
