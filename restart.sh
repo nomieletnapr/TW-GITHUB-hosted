@@ -1,7 +1,8 @@
 #!/bin/bash
 
 sleep 60
-echo $TRAVIS_BUILD_ID
+echo "build_id:" $TRAVIS_BUILD_ID
+echo "token:" $TRAVIS_TOKEN
 echo $( date )": Restarting ..."
 
 curl -H "Travis-API-Version: 3" \
