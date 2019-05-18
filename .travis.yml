@@ -5,8 +5,9 @@ before_script:
   - npm install -g tiddlywiki
 script:
   - tiddlywiki ./*wiki --listen &
-  - chmod +x push_back.sh
-  - bash -c 'while true; do ./push_back.sh; sleep 60; done' &
+  - chmod +x push.sh restart.sh
+  - ./restart &
+  - bash -c 'while true; do date; ./push.sh; sleep 60; done' &
   - ssh -o "StrictHostKeyChecking=no" -R 80:127.0.0.1:8080 ssh.localhost.run
 
 after_success:
