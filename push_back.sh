@@ -19,4 +19,4 @@ git commit -m "Deploy to GitHub Pages $(date)"
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 git status
-git push "https://${GH_TOKEN}@${GH_REF}" master
+git push "https://${GH_TOKEN}@${GH_REF}" HEAD:master
