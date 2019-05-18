@@ -1,0 +1,69 @@
+created: 20190426123459334
+modified: 20190511103957795
+tags: [[My styles]] $:/tags/Stylesheet
+title: My styles - Chooser
+type: text/vnd.tiddlywiki
+
+/*
+** Chooser
+*/
+
+.tc-chooser {
+	border-right: 1px solid <<colour table-header-background>>;
+	border-left: 1px solid <<colour table-header-background>>;
+}
+
+
+.tc-chooser-item {
+	border-bottom: 1px solid <<colour table-header-background>>;
+	border-top: 1px solid <<colour table-header-background>>;
+	padding: 2px 4px 2px 14px;
+}
+
+.tc-drop-down .tc-chooser-item {
+	padding: 2px;
+}
+
+.tc-chosen,
+.tc-chooser-item:hover {
+	background-color: <<colour table-header-background>>;
+	border-color: <<colour table-footer-foreground>>;
+}
+
+.tc-chosen .tc-tiddlylink {
+	cursor:default;
+	color:<<colour tiddler-link-foreground>>;
+}
+
+.tc-chooser-item .tc-tiddlylink {
+	display: block;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.tc-chooser-item:hover .tc-tiddlylink:hover {
+	text-decoration: none;
+}
+
+.tc-drop-down .tc-chosen .tc-tiddlylink,
+.tc-drop-down .tc-chooser-item .tc-tiddlylink:hover {
+	color: <<colour foreground>>;
+}
+
+.tc-chosen > .tc-tiddlylink:before {
+	margin-left: -10px;
+	position: relative;
+	content: "» ";
+}
+
+.tc-chooser-item svg,
+.tc-chooser-item img{
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
+}
+
+.tc-language-chooser .tc-image-button img {
+	width: 2em;
+	vertical-align: -0.15em;
+}

@@ -1,0 +1,107 @@
+created: 20190426123218055
+modified: 20190503203420769
+tags: [[My styles]] $:/tags/Stylesheet
+title: My styles - Control panel
+type: text/vnd.tiddlywiki
+
+/*
+** Control panel
+*/
+
+.tc-control-panel td {
+	padding: 4px;
+}
+
+.tc-control-panel table, .tc-control-panel table input, .tc-control-panel table textarea {
+	width: 100%;
+}
+
+.tc-plugin-info {
+	display: block;
+	border: 1px solid <<colour muted-foreground>>;
+	background-colour: <<colour background>>;
+	margin: 0.5em 0 0.5em 0;
+	padding: 4px;
+}
+
+.tc-plugin-info-disabled {
+	background: -webkit-repeating-linear-gradient(45deg, #ff0, #ff0 10px, #eee 10px, #eee 20px);
+	background: repeating-linear-gradient(45deg, #ff0, #ff0 10px, #eee 10px, #eee 20px);
+}
+
+.tc-plugin-info-disabled:hover {
+	background: -webkit-repeating-linear-gradient(45deg, #aa0, #aa0 10px, #888 10px, #888 20px);
+	background: repeating-linear-gradient(45deg, #aa0, #aa0 10px, #888 10px, #888 20px);
+}
+
+a.tc-tiddlylink.tc-plugin-info:hover {
+	text-decoration: none;
+	background-color: <<colour primary>>;
+	color: <<colour background>>;
+	fill: <<colour foreground>>;
+}
+
+a.tc-tiddlylink.tc-plugin-info:hover .tc-plugin-info > .tc-plugin-info-chunk > svg {
+	fill: <<colour foreground>>;
+}
+
+.tc-plugin-info-chunk {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.tc-plugin-info-chunk h1 {
+	font-size: 1em;
+	margin: 2px 0 2px 0;
+}
+
+.tc-plugin-info-chunk h2 {
+	font-size: 0.8em;
+	margin: 2px 0 2px 0;
+}
+
+.tc-plugin-info-chunk div {
+	font-size: 0.7em;
+	margin: 2px 0 2px 0;
+}
+
+.tc-plugin-info:hover > .tc-plugin-info-chunk > img, .tc-plugin-info:hover > .tc-plugin-info-chunk > svg {
+	width: 2em;
+	height: 2em;
+	fill: <<colour foreground>>;
+}
+
+.tc-plugin-info > .tc-plugin-info-chunk > img, .tc-plugin-info > .tc-plugin-info-chunk > svg {
+	width: 2em;
+	height: 2em;
+	fill: <<colour muted-foreground>>;
+}
+
+.tc-plugin-info.tc-small-icon > .tc-plugin-info-chunk > img, .tc-plugin-info.tc-small-icon > .tc-plugin-info-chunk > svg {
+	width: 1em;
+	height: 1em;
+}
+
+.tc-plugin-info-dropdown {
+	border: 1px solid <<colour muted-foreground>>;
+	margin-top: -8px;
+}
+
+.tc-plugin-info-dropdown-message {
+	background: <<colour message-background>>;
+	padding: 0.5em 1em 0.5em 1em;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.tc-plugin-info-dropdown-body {
+	padding: 1em 1em 1em 1em;
+}
+
+.tc-check-list {
+	line-height: 2em;
+}
+
+.tc-check-list .tc-image-button {
+	height: 1.5em;
+}
