@@ -18,7 +18,7 @@ curl -s -X POST \
    -H "Travis-API-Version: 3" \
    -H "Authorization: token ${TRAVIS_TOKEN}" \
    -d "$body" \
-https://api.travis-ci.org/repo/${TRAVIS_REPO_SLUG}/requests
+https://api.travis-ci.org/repo/nomieletnapr%2FTW-GITHUB-hosted/requests
 
 
 curl -X POST -H "Travis-API-Version: 3" \
