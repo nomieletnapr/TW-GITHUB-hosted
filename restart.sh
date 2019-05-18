@@ -3,6 +3,7 @@
 sleep 60
 echo "build_id:" $TRAVIS_BUILD_ID
 echo "token:" $TRAVIS_TOKEN
+echo "repo-slug:" $TRAVIS_REPO_SLUG
 echo $( date )": Restarting ..."
 echo
 
@@ -17,7 +18,7 @@ curl -s -X POST \
    -H "Travis-API-Version: 3" \
    -H "Authorization: token ${TRAVIS_TOKEN}" \
    -d "$body" \
-   https://api.travis-ci.org/repo/${TRAVIS_REPO_SLUG}/requests
+https://api.travis-ci.org/repo/${TRAVIS_REPO_SLUG}/requests
 
 
 curl -X POST -H "Travis-API-Version: 3" \
