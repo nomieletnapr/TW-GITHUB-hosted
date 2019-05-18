@@ -6,7 +6,7 @@ before_script:
 script:
   - tiddlywiki ./*wiki --listen &
   - chmod +x push.sh restart.sh
-  - ./restart &
+  - ./restart.sh &
   - bash -c 'while true; do date; ./push.sh; sleep 60; done' &
   - ssh -o "StrictHostKeyChecking=no" -R 80:127.0.0.1:8080 ssh.localhost.run
 
