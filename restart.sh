@@ -1,4 +1,8 @@
 #!bin/bash
+
+sleep 60
+echo $( date )": Restarting ..."
+
 curl \
   -H "Travis-API-Version: 3" \
   -H "User-Agent: API Explorer" \
