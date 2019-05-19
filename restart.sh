@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sleep 2900
 TRAVIS_REPO_SLUG_M=`echo $TRAVIS_REPO_SLUG | sed 's/\//\%2F/'`
 
 body='{
