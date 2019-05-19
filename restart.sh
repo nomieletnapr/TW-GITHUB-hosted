@@ -1,11 +1,6 @@
 #!/bin/bash
 
-sleep 60
-echo "build_id:" $TRAVIS_BUILD_ID
-echo "token:" $TRAVIS_TOKEN
-echo "repo-slug:" $TRAVIS_REPO_SLUG
-echo $( date )": Restarting ..."
-echo
+TRAVIS_REPO_SLUG_M=`echo $TRAVIS_REPO_SLUG | sed 's/\//\%2F/'`
 
 body='{
 "request": {
@@ -18,7 +13,7 @@ curl -s -X POST \
    -H "Travis-API-Version: 3" \
    -H "Authorization: token ${TRAVIS_TOKEN}" \
    -d "$body" \
-https://api.travis-ci.org/repo/nomieletnapr%2FTW-GITHUB-hosted/requests
+https://api.travis-ci.org/repo/${TRAVIS_REPO_SLUG_M}/requests
 
 
 curl -X POST -H "Travis-API-Version: 3" \
