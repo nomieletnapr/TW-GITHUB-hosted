@@ -1,3 +1,6 @@
-list: HelloThere
+created: 20190521165418360
+list: $:/ControlPanel HelloThere
+modified: 20190521165420109
 title: $:/StoryList
+type: text/vnd.tiddlywiki
 
