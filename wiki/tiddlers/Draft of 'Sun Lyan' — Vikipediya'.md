@@ -1,10 +1,3 @@
-created: NaNNaNNaNNaNNaNNaNNaN
-modified: 20190606184656558
-tags: article markdown inbox
-title: Сун Лянь — Википедия
-type: text/x-markdown
-url: https://ru.wikipedia.org/wiki/%D0%A1%D1%83%D0%BD_%D0%9B%D1%8F%D0%BD%D1%8C
-
 [Source](https://ru.wikipedia.org/wiki/Сун_Лянь "Permalink to Сун Лянь — Википедия")
 
 # Сун Лянь — Википедия
