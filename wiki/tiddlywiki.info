@@ -3,6 +3,7 @@
           "tiddlywiki/filesystem",
           "tiddlywiki/tiddlyweb",
           "tiddlywiki/codemirror",
+	  "tiddlywiki/markdown",
           "tiddlywiki/highlight"
 	],
 	"themes": [
